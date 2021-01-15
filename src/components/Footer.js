@@ -46,10 +46,13 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            
+
+
+            <Link to='https://www.instagram.com/fandtnature/'>Instagram</Link>
+            <Link to='https://www.facebook.com/paurush.dobhal'>Facebook</Link>
+            <Link to='https://www.linkedin.com/in/fandt-nature-560447204/'>Linkedin</Link>
+            <Link to='https://twitter.com/FandTNature1'>Twitter</Link>
           </div>
         </div>
       </div>
@@ -65,7 +68,7 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/paurush.dobhal'
               target='_blank'
               aria-label='Facebook'
             >
@@ -73,36 +76,29 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/fandtnature/'
               target='_blank'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
             <Link
-              class='social-icon-link youtube'
-              to='/'
+              class='social-icon-link linkedin'
+              to='https://www.linkedin.com/in/fandt-nature-560447204/'
               target='_blank'
-              aria-label='Youtube'
+              aria-label='Linkedin'
             >
-              <i class='fab fa-youtube' />
+              <i class='fab fa-linkedin' />
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='https://twitter.com/FandTNature1'
               target='_blank'
               aria-label='Twitter'
             >
               <i class='fab fa-twitter' />
             </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
+            
           </div>
         </div>
       </section>

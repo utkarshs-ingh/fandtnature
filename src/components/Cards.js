@@ -10,13 +10,13 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/bottle1.jpeg'
+              src='https://raw.githubusercontent.com/VibhorSingh19/f-t/main/public/images/bottle1.jpeg'
               text='Explore the hidden waterfall deep inside the Amazon Jungle'
               label='Bamboo Bottles'
               path='/services'
             />
             <CardItem
-              src='images/bottle2.jpeg'
+              src='https://raw.githubusercontent.com/VibhorSingh19/f-t/main/public/images/bottle2.jpeg'
               text='Travel through the Islands of Bali in a Private Cruise'
               label='Bamboo Bottles'
               path='/services'
@@ -24,19 +24,19 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/bottle3.jpeg'
+              src='https://raw.githubusercontent.com/VibhorSingh19/f-t/main/public/images/bottle3.jpeg'
               text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
               label='Bamboo Bottles'
               path='/services'
             />
             <CardItem
-              src='images/bottle4.jpeg'
+              src='https://raw.githubusercontent.com/VibhorSingh19/f-t/main/public/images/bottle4.jpeg'
               text='Experience Football on Top of the Himilayan Mountains'
               label='Bamboo Bottles'
               path='/products'
             />
             <CardItem
-              src='images/bottle5.jpeg'
+              src='https://raw.githubusercontent.com/VibhorSingh19/f-t/main/public/images/bottle5.jpeg'
               text='Ride through the Sahara Desert on a guided camel tour'
               label='Bamboo Bottles'
               path='/sign-up'

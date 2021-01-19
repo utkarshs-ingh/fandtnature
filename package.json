@@ -1,17 +1,21 @@
 {
-  "name": "test",
-  "homepage": "https://vibhorsingh19.github.io/f-t/",
+  "name": "project",
+  "homepage": "https://vibhorsingh19.github.io/F-T-Nature/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "gh-pages": "^3.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "bootstrap": "^4.5.3",
+    "emailjs-com": "^2.6.4",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-tilt": "^0.1.4",
+    "tachyons": "^4.12.0"
   },
   "scripts": {
     "predeploy": "npm run build",

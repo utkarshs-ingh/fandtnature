@@ -70,7 +70,7 @@
   margin-bottom: 16px;
 }
 
-.footer-link-items > h2 {
+.footer-link-items > h2, h6 {
   color: #fff;
 }
 

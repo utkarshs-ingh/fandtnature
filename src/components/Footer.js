@@ -1,9 +1,23 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from './logo.png';
+import emailjs from 'emailjs-com';
+
 function Footer() {
+  function sendEmail(e) {
+    e.preventDefault();
+    console.log(e.target);
+    emailjs.sendForm('service_ajkp2cd', 'template_av7vkrn', e.target, 'user_zPE9wkqUAY4IulRjvdWuf')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  }
+
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -14,14 +28,14 @@ function Footer() {
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
-          <form>
+          <form onSubmit={sendEmail}>
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button variant="outline-dark" size="lg" type="submit">Subscribe</Button>
           </form>
         </div>
       </section>
@@ -30,29 +44,22 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <Link to='/'>Meet our team</Link>
+            <Link to='/'>Meet our advisors</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <a href='mailto:utttu123@gmail.com'>Mail</a>
+            <h6>+91-7014662503</h6>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            
-
-
-            <Link to='https://www.instagram.com/fandtnature/'>Instagram</Link>
-            <Link to='https://www.facebook.com/paurush.dobhal'>Facebook</Link>
-            <Link to='https://www.linkedin.com/in/fandt-nature-560447204/'>Linkedin</Link>
-            <Link to='https://twitter.com/FandTNature1'>Twitter</Link>
+            <a href='https://www.instagram.com/fandtnature/'>Instagram</a>
+            <a href='https://www.facebook.com/paurush.dobhal'>Facebook</a>
+            <a href='https://www.linkedin.com/in/fandt-nature-560447204/'>Linkedin</a>
+            <a href='https://twitter.com/FandTNature1'>Twitter</a>
           </div>
         </div>
       </div>
@@ -66,38 +73,34 @@ function Footer() {
           </div>
           <small class='website-rights'>F&T Nature © 2020</small>
           <div class='social-icons'>
-            <Link
+            <a
               class='social-icon-link facebook'
-              to='https://www.facebook.com/paurush.dobhal'
-              target='_blank'
+              href='https://www.facebook.com/paurush.dobhal'
               aria-label='Facebook'
             >
               <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link instagram'
-              to='https://www.instagram.com/fandtnature/'
-              target='_blank'
+              href='https://www.instagram.com/fandtnature/'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link linkedin'
-              to='https://www.linkedin.com/in/fandt-nature-560447204/'
-              target='_blank'
+              href='https://www.linkedin.com/in/fandt-nature-560447204/'
               aria-label='Linkedin'
             >
               <i class='fab fa-linkedin' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link twitter'
-              to='https://twitter.com/FandTNature1'
-              target='_blank'
+              href='https://twitter.com/FandTNature1'
               aria-label='Twitter'
             >
               <i class='fab fa-twitter' />
-            </Link>
+            </a>
             
           </div>
         </div>
